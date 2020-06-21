@@ -1,36 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Lemon8864の小站</title>
-  </head>
-    <body background="th.jpg"
-      style=" background-repeat:no-repeat ;
-background-size:100% 100%;
-background-attachment: fixed;">
-    <img src=" ./photo.jpg"/>
-      <div style="color:#FFD306">
-        <h1>欢迎访问莱蒙庄园官方网站</h1>
-      </div>
-      <h2>-----------------------------------------服务器公告栏---------------------------------------------</h2
-      <p>·主服由于部分原因迁移至新服务器129.211.95.199，端口19132</p>
-      <h2>------------------------------------------------------------------------------------------------</h2>
-    <p>Lemon8864的个人网站：<a href="fz1.html" >点我跳转</a>（正在编写）</p>
-    <p>我们是一个小小的minecraft基岩版服务<br>进入服务器前，请确保您阅读了玩家守则！具体进入/注册方法可以看下面链接里的Word文档<br>服务器分三个（目前）1.主服（生存服）2.空岛服3.纯净生存服<br>地址：主服：129.211.95.199，端口：19132<br>空岛服：lemon.laoduan.net，端口：19132<br>纯净生存服：106.52.121.96，端口：19132<br>【服务器特色】<br>[生存服]采用nukkitx打造，加入若干插件，自带反作弊端，全自动圈地，多世界互通打破原版限制，为你带来和网易租聘服不一样の体验，我们不是命令方块，我们是插件服务器（滑稽）<br>[空岛服]采用nukkitx打造，超壮观主城，可自定义岛屿，在这里岩浆和水混合不止会产生黑曜石和石头，不一样の空岛生存就在这里<br>[纯净生存服]我们已经将纯净生存服升级到了BDX核心，现在纯净生存服支持锁箱子和箱子闪电且拥有更多原版内容</p>
-    <p><s>服务器人数过两百腐竹女装</s></p>
+<head>
+    <link rel="shortcut icon" href="icon/lemon2.ico" type="image/x-icon">
+	<title>莱蒙庄园官方网站</title>
+	<script>
+function setCookie(cname,cvalue,exdays){
+	var d = new Date();
+	d.setTime(d.getTime()+(exdays*24*60*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+"; "+expires;
+}
+function getCookie(cname){
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+	}
+	return "";
+}
+function checkCookie(){
+	var user=getCookie("username");
+	if (user!=""){
+		alert("欢迎 " + user + " 再次访问本站");
+	}
+	else {
+		user = prompt("请输入你的名字(可以随便输入，会作为cookie数据保存在本地，我不会知道你输入的内容，请放心不会暴露你的任何个人信息）","");
+  		if (user!="" && user!=null){
+    		setCookie("username",user,30);
+    	}
+	}
+}
+</script>
+    <script language="javascript">
+    	function displayDate(){
+    		document.getElementById("demo").innerHTML=Date();
+    	}
+    </script>
+</head>
+<body onload="checkCookie()" background="image/minecraft-003.jpg" style="background-repeat: no-repeat;background-size: 100% 100%" >
+	<div style="color: #0000E3">
+		<input id="myInput" value="输入搜索的内容...">
+<button id="myBtn" onclick="javascript:alert('想得美，搜索个毛线啊')">搜索</button>
+	</div>
+	<div align="right">
+		<h4><a href="login.html">注册账号（屁用没有）</a></h4>
+
+	</div>
+	<div style="color: #4B0091" align="center">
+        <img src="logo/logo.png" width="200" height="200">
+    <p><font size="7">欢迎来到莱蒙庄园官网 ver2.0</font></p>
+    <p id="demo">【点击下面按钮显示当前时间】</p>
     
-    <h2>-----------------------------------软件/帮助文档下载区----------------------------------------------</h2>
-    <b>必看！！！服务器玩家守则：<a href="服务器玩家守则.txt" >点我在线浏览</a></b>
-    <p>服务器介绍和进入教程文档： <a href="服务器介绍及进入方法.docx" >点我下载</a></p>
-    <p>服务器介绍和进入教程文档： <a href="服务器介绍及进入方法.txt" >点我在线浏览</a>（上面那个不好使就用这个）</p>
+    <button type="button" onclick="displayDate()">显示日期</button>
+    <br>
+    <br>
+    <script>
+    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.write("您正在使用[移动设备]访问本站")
+} else {
+    document.write("您正在使用[PC]访问本站")
+}
+    </script></div>
+    <div align="center" style="color: #750075"><h1>-关于莱蒙庄园-</h1></div>
+    <div align="center" style="color: #00DB00">
+    <b>我们是一个小小的Minecraft服务器
+    <br>拥有三个分服
+    <br>分为nk核心的主生存服和空岛服，bdx核心的原版生存服</b></div>
+    <br>
+    <div align="center" style="color: #F9F900">
+    <hr size="6" color="blue" title="我就是一条线，你为什么要把指针放在这里这么久嗷"></hr>
+    <br>
+    <h1>-我们的特色-</h1>
+    <b>------------------------------------------</b>
+    <h3>主生存服：地址mc.laoduan.net端口19132</h3>
+    <h4>由于ddos原因暂时关闭</h4>
+    <b>采用nukkitx核心，加入了很多插件
+    <br>锁箱子，领地，商店，tpa等系统应有尽有
+    <br>加入了nk反作弊系统，最快时间检测作弊并kick出
+    <br>多世界互通，生存区，资源区，主城隔离地图
+    <br>高频红石自动检测，遇到违规红石立即停用，无法激活
+    <br>跨服联动。可以在菜单直接跨服到其他服务器</b>
+    <br>------------------------------------------</div>
+    <br>
+    <div align="center" style="color: #0000E3">
+    <h3>空岛服：地址106.52.121.96端口19133</h3>
+    <b>同样是nukkitx核心，全自动生成空岛
+    <br>独特的skyblock系统，修改原版特性
+    <br>和主生存服一致的反作弊系统
+    <br>多岛屿玩家互通，完整经济交涉系统</b>
+    <br>------------------------------------------</div>
+    <br>
+    <div align="center" style="color: #FF5809">
+    <h3>原版生存服:地址106.52.121.96端口19132</h3>
+    <b>前两者插件服都有舍弃原版内容的缺点
+    <br>但bdx核心的原版生存服保留了所有原版内容
+    <br>而且采用ez等插件加载器，在原版的基础上加入扩展插件
+    <br>带给你和网易租聘服不一样的体验
+    <br>锁箱子，行为监控等插件已经加入</b></div>
+    <br>
+    <br>
+    <br>
+    <div style="color: #4B0091" align="center">
+        <hr size="6" color="blue" title="我就是条线啊喂，盯着我干嘛"></hr>
+         <h2>软件/帮助文档下载区</h2>
+    <b>必看！！！服务器玩家守则：<a href="txt/服务器玩家守则.txt" >点我在线浏览</a></b>
+    <p>服务器介绍和进入教程文档： <a href="doc/服务器介绍及进入方法.docx" >点我下载</a></p>
     <p>服务器安卓客户端（其他平台请自行购买）：<a href="https://pan.baidu.com/s/1369hI6ID3jFuY0z6E4mUkQ" >点我下载</a> 提取码: xhvm</p>
-    <p>服务器管理组申请条约：<a href="服务器管理组申请条约.txt" >点我在线浏览</a></p>
-    <h2>--------------------------------------------------------------------------------------------------</h2>
-    
-    
+    <p>服务器管理组申请条约：<a href="txt/服务器管理组申请条约.txt" >点我在线浏览</a></p>
+    <hr size="6" color="blue" title="hentai hentai 无路赛"></hr>
+    <p><s>服务器人数过两百腐竹女装</s></p>
+    </div>
+    <br>
+    <br>
+    <div align="center" style="color: #E800E8">
     <p>本站由腐竹Lemon8864制作，做的很糙，请各位谅解,如果你有什么好的意见，欢迎在Xbox里反馈，我的XboxID是Lemon8864，服务器崩溃也可以找我</p>
     <p>本网站源代码开放，源代码下载：<a href="https://github.com/Lemon8864/Lemon8864.github.io/" >点我跳转到GitHub源码库</a></p>
     
-    <p>2020@Lemon's Manor All Rights Reserved ---问题反馈：<a href="faq.html" >点我跳转</a></p>
-   </body>
-  </html>
+    <p>2020@Lemon's Manor All Rights Reserved --问题反馈：<a href="faq.html" >点我跳转</a></p>
+    <br>
+    <br>
+</div>
+</body>
+</html>
