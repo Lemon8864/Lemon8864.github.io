@@ -1,0 +1,181 @@
+/*------------------------------------------------------------------
+[Table of contents]
+This file include css code for each section or custom css for element in each section and each page.
+
+-------------------------------------------------------------------*/
+
+
+/* #Partner */
+
+.partner-section-style-01{
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  padding-bottom: 35px;
+}
+.partner-section-style-02 .swin-sc-partner{
+  background-color: #f9f9f9;
+  padding: 35px 15px;
+}
+
+/* #Background*/
+
+.builday-bg{
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.builday-bg-small{
+  padding: 50px 0;
+}
+.swin-row-knob .swin-column-padding{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.swin-row-knob{
+  margin-top: 165px;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.swin-row-knob .knob{
+  margin-top: -45px;
+}
+
+/* #Contact*/
+
+.contact-section-simple .contact-wrap{
+    padding-top: 30px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+}
+
+/* #Counter*/
+
+.counter-section .swin-sc-counter.knob{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #ffffff;
+    box-shadow: 0 0 26px 0 #00000030;
+}
+
+/* #Home 1*/
+
+.home-1 .page-content{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.home-1 .service-section{
+  background-image: url(../images/background/What-we-do-Home1.png);
+}
+
+/*Home 2*/
+
+.home-2 .page-content{
+  padding-bottom: 70px;
+}
+.home-2 .project-section{
+  background-image: url("../images/background/BG-Start-Your-Project-Home-2.png");
+}
+.home-2  .video-wrap{
+  background-image: url("../images/background/Home2-campagin-video-Home2.png");
+}
+
+
+/* #About*/
+
+.pabout .page-heading{
+  background-image: url("../images/page-heading/aboutbg-1.jpg");
+}
+.pabout .counter-section{
+  background-image: url("../images/background/Home2-campagin-video-Home2.png");
+}
+
+.pabout .survey-section{
+  background-image: url("../images/background/BG-about.png");
+ 
+}
+.pabout .page-content{
+  padding-bottom: 0;
+}
+
+/* #Service*/
+.pservices .page-heading{
+    background-image: url("../images/page-heading/project10.jpg");
+}
+
+/* #Projects*/
+.p-projects .page-heading{
+    background-image: url("../images/page-heading/project-1.jpg");
+}
+
+/* #News*/
+.p-news .page-heading{
+    background-image: url("../images/page-heading/newbg-1.jpg");
+}
+.news-3-column .page-content {
+  padding-bottom: 70px;
+}
+
+/*Contact*/
+.pcontact .page-heading{
+  background-image: url("../images/page-heading/contact.jpg")
+}
+.pcontact .swin-sc-contact-form-group{
+  background-image: url("../images/background/contact-bg.jpg")
+}
+.pcontact .contact-form-section{
+  background-color: #f9f9f9;
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+.pcontact .swin-sc-contact-form-group .title-section{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.pcontact .page-content{
+  padding-bottom: 0;
+}
+.detail-page .page-heading{
+  background-image: url(../images/page-heading/page-heading.jpg);
+}
+
+
+/*Footer*/
+footer{
+  background: url(../images/footer-bg.jpg);
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 960px) {
+  .home-1 .service-section{
+    background-position: right center !important;
+  }
+  .swin-row-knob{
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  .swin-row-knob .swin-column-padding{
+    padding-top: 100px;
+  }
+  .swin-row-knob .knob{
+    margin-top: 0 !important;
+  }
+  .swin-row-mbp{
+    padding: 100px 0;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  section:not(:last-child){
+    margin-bottom: 100px;
+  }
+   /*contact social in header*/
+  .contact-section .contact-wrap div[class*='col-'] + div[class*='col-']{
+      margin-top: 20px;
+  }
+}
